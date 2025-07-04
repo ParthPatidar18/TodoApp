@@ -21,6 +21,7 @@ exports.createTodo = async(req,res) => {
     catch(err) {
         console.error(err);
         console.log(err);
+        alert("Error while connecting to the api");
         res.status(500)
         .json({
             success:false,
